@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title><%=title%></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+                crossorigin="anonymous">
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="page-header">
+                    <p><%=title%></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-md-12">
+                        <ul class="list-group" id="taskList">
+                                                                        
+                            <li>
+                     
+                      <p><%= data.title %></p>
+                      <p><%= data.brand %></p>
+                      <p><%= data.description %></p>
+                       <p><%= data.availability %></p>  
+                            </li>
+                            
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </body>
+</html>

@@ -1,0 +1,67 @@
+    <!doctype html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <!-- Latest compiled and minified CSS -->
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+            <link rel='stylesheet' href='/stylesheets/style.css' />
+            <title><%=title%></title>
+            
+        </head>
+
+        <body>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-header">
+                        <p><%=title%></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <br />
+                        <div>
+                            <form action="/productadd" method="POST">
+                                <div class="form-group">
+                                    <label for="title" class="control-label">Title</label>
+                                    <input type="text" placeholder="Alphanumeric text" name="title"class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                    <label for="description" class="control-label">Description</label>
+                                    <input type="text" placeholder="Alphanumeric text" name="description" class="form-control">
+                                    </div>                            
+                                <div class="form-group">
+                                    <label for="brand" class="control-label">Brand</label>
+                                    <input type="text" name="brand" placeholder="Alphanumeric text" class="form-control">
+                                </div>
+                                <div class="form-group">
+                                <label class="radio-inline"><input type="radio" name="availability" checked>Available now</label>
+                                <label class="radio-inline"><input type="radio" name="availability" >Un-Available</label>
+                                    </div>
+                                <button class="btn btn-primary btn-lg" type="submit" id ="productadd">Add Product</button>
+                                <a class="btn btn-link" id ="loginlink" href="/product">Take me to product list</a>
+                            </form>
+                            </div>
+                    </div>
+
+                    <div class="col-md-8">
+                        <p>
+                         <%= title %>
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        
+                    </div>
+                </div>
+            </div>
+
+        
+        </body>
+    </html>
